@@ -1,14 +1,16 @@
-//
-//  main.cpp
-//  Warwick_hm72
-//
-//  Created by Александр Тихонов on 10.03.2022.
-//
-
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#define abCHECK(a,b) (a>=0 && a<b) ? std::cout << "true\n" : std::cout << "false\n"
+
+int main()
+{
+    int a, b;
+    std::cout << "первое число: ";
+    std::cin >> a;
+    std::cout << "второе число: ";
+    std::cin >> b;
+    
+    abCHECK(a,b);
+    
     return 0;
 }
